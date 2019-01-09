@@ -1,0 +1,3 @@
+<ul >
+  <li  *ngFor = "let d of inputData;"  [ngClass]="{'activeChild': selectedItem == d}" (click) = "emitdata(d)">{{d}}</li>
+</ul>

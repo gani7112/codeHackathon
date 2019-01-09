@@ -1,0 +1,9 @@
+.displaynone{
+    display: none;
+}
+.active {
+    display:block;
+}
+.header{
+    background-color: blueviolet
+}
