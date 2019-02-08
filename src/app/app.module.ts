@@ -3,8 +3,6 @@ import { NgModule, Component } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CodeathonComponent } from './codeathon/codeathon.component';
 import { CodeathonparentComponent } from './codeathonparent/codeathonparent.component';
-import { ParentComponent } from './parent/parent.component';
-import { ChildComponent } from './child/child.component';
 import { RouterModule } from '../../node_modules/@angular/router';
 
 @NgModule({
@@ -12,9 +10,6 @@ import { RouterModule } from '../../node_modules/@angular/router';
     AppComponent,
     CodeathonComponent,
     CodeathonparentComponent,
-    ParentComponent,
-    ChildComponent,
-    
   ],
   imports: [
     BrowserModule,

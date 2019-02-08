@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Routes, ActivatedRoute, Router, Params, ParamMap, NavigationEnd, NavigationStart } from '@angular/router';
-import { PreviousRouteService } from '../prevousRoute.service';
 
 const routeArray: Routes = [];
 @Component({
@@ -19,7 +18,7 @@ export class CodeathonparentComponent implements OnInit {
 
   @Input()
   displayheaderonload
-  constructor(private activatedRoute: ActivatedRoute, private router: Router, private previousRoute: PreviousRouteService) { }
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) { }
 
 
   //program starts here
