@@ -1,10 +1,12 @@
-<ul *ngIf="displayheaderonload" class="row ">
-  <li class=" column1of5 header" *ngFor="let head of header;let i = index">{{head}}</li>
-</ul>
-<ul *ngIf="!displayheaderonload" class="row ">
-  <li class=" column1of5 displaynone header" *ngFor="let head of header;let i = index"  [class.active]="obj['display'+head]">{{head}}</li>
-</ul>
+
+  <ul class="row" *ngIf="displayheaderonload">
+    <li class=" column1of5 header" *ngFor="let head of header;let i = index">{{head}}</li>
+  </ul>
+  <ul class="row" *ngIf="!displayheaderonload">
+    <li class=" column1of5 displaynone header" *ngFor="let head of header;let i = index" [class.active]="obj['display'+head]">{{head}}</li>
+  </ul>
+
 <div class="row">
-  <codeathon *ngFor="let head of header;let i = index" class='displaynone column1of5' [class.active]="obj['display'+head]" [inputData]="obj[head]"
-    (outputData)="next($event,i)"></codeathon>
+  <codeathon *ngFor="let head of header;let i = index" class='displaynone column1of5' [class.active]="obj['display'+head]"
+    [inputData]="obj[head]" (outputData)="next($event,i)"></codeathon>
 </div>

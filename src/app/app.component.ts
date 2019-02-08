@@ -9,8 +9,7 @@ import * as d31 from 'd3'
 export class AppComponent {
   title = 'Code Hackathon';
 
-
-  t = {
+  data = {
     "Locations": [
       {
         "id": "1",
@@ -38,7 +37,7 @@ export class AppComponent {
       },
       {
         "id": "3",
-        "name": "HDC2",
+        "name": "HDC3",
         "Locationsid": "1"
       },
       {
@@ -48,12 +47,12 @@ export class AppComponent {
       },
       {
         "id": "5",
-        "name": "BDC1",
+        "name": "BDC2",
         "Locationsid": "2"
       },
       {
         "id": "6",
-        "name": "BDC1",
+        "name": "BDC3",
         "Locationsid": "2"
       }
     ],
@@ -77,6 +76,50 @@ export class AppComponent {
         "id": "4",
         "name": "towerB",
         "Sitesid": "2"
+      }
+    ],
+    "Floor": [
+      {
+        "id": "1",
+        "name": "Floor1",
+        "Buildingsid": "1"
+      },
+      {
+        "id": "2",
+        "name": "Floor2",
+        "Buildingsid": "1"
+      },
+      {
+        "id": "3",
+        "name": "Floor1",
+        "Buildingsid": "2"
+      },
+      {
+        "id": "4",
+        "name": "Floor2",
+        "Buildingsid": "2"
+      }
+    ],
+    "Bays": [
+      {
+        "id": "1",
+        "name": "Bay1",
+        "Floorid": "1"
+      },
+      {
+        "id": "2",
+        "name": "Bay2",
+        "Floorid": "1"
+      },
+      {
+        "id": "3",
+        "name": "Bay1",
+        "Floorid": "2"
+      },
+      {
+        "id": "4",
+        "name": "Bay2",
+        "Floorid": "2"
       }
     ]
   }

@@ -1,4 +1,5 @@
 import { Component, OnInit,Input, Output,EventEmitter } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'codeathon',
@@ -11,7 +12,9 @@ export class CodeathonComponent implements OnInit {
   @Output() outputData = new EventEmitter() 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() { 
+  }
+
   emitdata(data){
     this.outputData.emit(data);
     this.selectedItem = data;
